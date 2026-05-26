@@ -1,0 +1,15 @@
+[project]
+name = "docshare"
+version = "0.1.0"
+description = "Small document-sharing API substrate for a TestGen access-control task."
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi==0.115.6",
+    "httpx==0.28.1",
+    "pytest==8.3.4",
+    "uvicorn==0.34.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
